@@ -1,12 +1,9 @@
 #include<iostream>
 #include<time.h>
-//#include<stdlib.h>
-#include"math-motions/math_sandus.h"
-#include"math-motions/text_thing.h"
 #include<fstream>
+#include<string.h>
 #include"polinoame.h"
-
-//ifstream cal2("cal.txt");
+using namespace std;
 
 int bigger(int a,int b)
 {
@@ -41,7 +38,6 @@ int jul_bisect(int an)
 
  if(an%3==0 && an<=-9)
  {
-   // cout<<endl<<"acoording to wikipedia :https://en.wikipedia.org/wiki/Julian_calendar"<<endl;
     return 1;
  }
 
@@ -326,8 +322,6 @@ struct sticky_notes
 
         for(int i=1; i<=dt.nr; i++)
         {
-            // cout<<"comp"<<dt[i].zi.x<<" "<<dt[i].luna.x<<" "<<dt[i].an<<endl;
-
             if(dt[i]==nd)
             {
 
@@ -373,7 +367,7 @@ struct sticky_notes
                 g.close();
 
                      if(num)
-                     {
+                     {  //schimb culoare
                         cl(1,1,10);
                      cout<<"password correct:"<<endl;
                         cl(1,1,15);
